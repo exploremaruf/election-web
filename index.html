@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community Poll</title>
+  <title>আধুনিক কমিউনিটি পোল</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Community Poll</h1>
+
+  <header>
+    <h1>Community Poll 🍎</h1>
+    <p>আপনার প্রিয় ফলটি বেছে নিন এবং ভোট দিন!</p>
+  </header>
   
-  <div class="poll-container">
-    <!-- Apple Card -->
-    <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Apple">
+  <main class="poll-container">
+    <div class="card" data-item="apple">
+      <div class="img-wrapper">
+        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6bcd6?w=200" alt="Apple">
+      </div>
       <h2>Apple</h2>
-      <button class="vote-btn" data-candidate="apple">Vote</button>
-      <p id="apple-votes">Votes: 0</p>
+      <button class="vote-btn" onclick="addVote('apple')">Vote</button>
+      <div class="vote-count">Votes: <span id="apple-votes">0</span></div>
     </div>
 
-    <!-- Banana Card -->
-    <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Banana">
+    <div class="card" data-item="banana">
+      <div class="img-wrapper">
+        <img src="https://images.unsplash.com/photo-1571771894821-ad99024157c7?w=200" alt="Banana">
+      </div>
       <h2>Banana</h2>
-      <button class="vote-btn" data-candidate="banana">Vote</button>
-      <p id="banana-votes">Votes: 0</p>
+      <button class="vote-btn" onclick="addVote('banana')">Vote</button>
+      <div class="vote-count">Votes: <span id="banana-votes">0</span></div>
     </div>
 
-    <!-- Orange Card -->
-    <div class="card">
-      <img src="https://via.placeholder.com/150" alt="Orange">
+    <div class="card" data-item="orange">
+      <div class="img-wrapper">
+        <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=200" alt="Orange">
+      </div>
       <h2>Orange</h2>
-      <button class="vote-btn" data-candidate="orange">Vote</button>
-      <p id="orange-votes">Votes: 0</p>
+      <button class="vote-btn" onclick="addVote('orange')">Vote</button>
+      <div class="vote-count">Votes: <span id="orange-votes">0</span></div>
     </div>
-  </div>
+  </main>
 
-  <div class="total-votes">
-    <h3>Total Votes: <span id="total-votes">0</span></h3>
-  </div>
+  <section class="summary">
+    <div class="total-box">
+      <h3>Total Votes Cast: <span id="total-votes">0</span></h3>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
