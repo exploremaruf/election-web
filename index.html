@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Poll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Community Poll</h1>
+  
+  <div class="poll-container">
+    <!-- Apple Card -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Apple">
+      <h2>Apple</h2>
+      <button class="vote-btn" data-candidate="apple">Vote</button>
+      <p id="apple-votes">Votes: 0</p>
+    </div>
+
+    <!-- Banana Card -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Banana">
+      <h2>Banana</h2>
+      <button class="vote-btn" data-candidate="banana">Vote</button>
+      <p id="banana-votes">Votes: 0</p>
+    </div>
+
+    <!-- Orange Card -->
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Orange">
+      <h2>Orange</h2>
+      <button class="vote-btn" data-candidate="orange">Vote</button>
+      <p id="orange-votes">Votes: 0</p>
+    </div>
+  </div>
+
+  <div class="total-votes">
+    <h3>Total Votes: <span id="total-votes">0</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
