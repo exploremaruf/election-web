@@ -1,5 +1,6 @@
 :root {
   --primary: #4f46e5;
+  --success: #10b981;
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
   --text-main: #1e293b;
@@ -14,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+header {
+  text-align: center;
+}
+
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -22,7 +27,6 @@ header h1 {
 header p {
   color: #64748b;
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .poll-container {
@@ -70,12 +74,16 @@ header p {
 }
 
 .vote-btn:hover {
-  background-color: #4338ca;
   filter: brightness(1.1);
 }
 
 .vote-btn:active {
   transform: scale(0.95);
+}
+
+/* Success state when clicked */
+.vote-btn.voted {
+  background-color: var(--success);
 }
 
 .vote-count {
@@ -97,4 +105,8 @@ header p {
   border-radius: 50px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--primary);
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
 }
