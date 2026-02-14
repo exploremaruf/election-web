@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আধুনিক কমিউনিটি পোল</title>
+  <title>Modern Community Poll</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <h1>Community Poll 🍎</h1>
-    <p>আপনার প্রিয় ফলটি বেছে নিন এবং ভোট দিন!</p>
+    <p>Pick your favorite fruit and cast your vote!</p>
   </header>
   
   <main class="poll-container">
-    <div class="card" data-item="apple">
+    <div class="card">
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6bcd6?w=200" alt="Apple">
       </div>
       <h2>Apple</h2>
-      <button class="vote-btn" onclick="addVote('apple')">Vote</button>
+      <button class="vote-btn" data-candidate="apple">Vote</button>
       <div class="vote-count">Votes: <span id="apple-votes">0</span></div>
     </div>
 
-    <div class="card" data-item="banana">
+    <div class="card">
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1571771894821-ad99024157c7?w=200" alt="Banana">
       </div>
       <h2>Banana</h2>
-      <button class="vote-btn" onclick="addVote('banana')">Vote</button>
+      <button class="vote-btn" data-candidate="banana">Vote</button>
       <div class="vote-count">Votes: <span id="banana-votes">0</span></div>
     </div>
 
-    <div class="card" data-item="orange">
+    <div class="card">
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=200" alt="Orange">
       </div>
       <h2>Orange</h2>
-      <button class="vote-btn" onclick="addVote('orange')">Vote</button>
+      <button class="vote-btn" data-candidate="orange">Vote</button>
       <div class="vote-count">Votes: <span id="orange-votes">0</span></div>
     </div>
   </main>
