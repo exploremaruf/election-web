@@ -14,30 +14,36 @@
   </header>
   
   <main class="poll-container">
-    <div class="card">
+    <div class="card" id="card-apple">
+      <div class="leader-badge">🏆 Leader</div>
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6bcd6?w=200" alt="Apple">
       </div>
       <h2>Apple</h2>
       <button class="vote-btn" data-candidate="apple">Vote</button>
+      <div class="progress-container"><div class="progress-bar" id="bar-apple"></div></div>
       <div class="vote-count">Votes: <span id="apple-votes">0</span></div>
     </div>
 
-    <div class="card">
+    <div class="card" id="card-banana">
+      <div class="leader-badge">🏆 Leader</div>
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1571771894821-ad99024157c7?w=200" alt="Banana">
       </div>
       <h2>Banana</h2>
       <button class="vote-btn" data-candidate="banana">Vote</button>
+      <div class="progress-container"><div class="progress-bar" id="bar-banana"></div></div>
       <div class="vote-count">Votes: <span id="banana-votes">0</span></div>
     </div>
 
-    <div class="card">
+    <div class="card" id="card-orange">
+      <div class="leader-badge">🏆 Leader</div>
       <div class="img-wrapper">
         <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=200" alt="Orange">
       </div>
       <h2>Orange</h2>
       <button class="vote-btn" data-candidate="orange">Vote</button>
+      <div class="progress-container"><div class="progress-bar" id="bar-orange"></div></div>
       <div class="vote-count">Votes: <span id="orange-votes">0</span></div>
     </div>
   </main>
@@ -45,6 +51,7 @@
   <section class="summary">
     <div class="total-box">
       <h3>Total Votes Cast: <span id="total-votes">0</span></h3>
+      <button id="reset-btn">Reset All</button>
     </div>
   </section>
 
