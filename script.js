@@ -35,7 +35,9 @@ voteButtons.forEach(button => {
     button.addEventListener('click', () => {
         const candidate = button.getAttribute('data-candidate');
         votes[candidate]++;
-        totalVotes++;
+        function updateUI() {
+    totalVotes = Object.values(votes).reduce((a, b) => a + b, 0);
+
         
         button.textContent = 'Voted! ✓';
         button.classList.add('voted');
