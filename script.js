@@ -33,7 +33,8 @@ function updateUI() {
 
 voteButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const candidate = button.getAttribute('data-candidate');
+        const candidate = button.dataset.candidate;
+
         votes[candidate]++;
         function updateUI() {
     totalVotes = Object.values(votes).reduce((a, b) => a + b, 0);
